@@ -59,7 +59,7 @@ export class SliderBox extends Component {
   }
 
   onSnap(index) {
-    this._ref.snapToItem(index);
+    this._ref.snapToItem(index,false);
     const { currentImageEmitter } = this.props;
     this.setState({ currentImage: index }, () => {
       if (currentImageEmitter) {
